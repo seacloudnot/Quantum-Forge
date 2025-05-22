@@ -552,4 +552,4 @@ To learn more about specific protocols and advanced features, refer to:
 
 - [ECOSYSTEM.md](ECOSYSTEM.md) - Complete overview of the ecosystem
 - [ARCHITECTURE.md](ARCHITECTURE.md) - Detailed architecture and design
-- API documentation for individual components in the `docs/` directory 
+- No API system has been implemented yet
