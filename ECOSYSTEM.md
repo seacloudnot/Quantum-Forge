@@ -202,6 +202,6 @@ All simulation parameters are derived from current quantum hardware specificatio
 
 This approach ensures that protocols developed in this ecosystem will transition smoothly to real quantum hardware as it becomes more widely available.
 
-## Conclusion
+## Summary
 
 The Quantum Protocols Ecosystem represents a comprehensive framework for bringing quantum advantages to distributed systems and blockchain applications. By providing a modular, adaptable set of quantum-enhanced protocols, it enables developers to create more secure, efficient, and powerful systems that can leverage both classical and quantum computing capabilities. 
