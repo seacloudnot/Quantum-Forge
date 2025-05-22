@@ -25,7 +25,7 @@ The protocols in this library enable quantum-enhanced capabilities like:
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/quantum-protocols.git
+git clone https://github.com/seacloudnot/Quantum-Forge.git
 cd quantum-protocols
 cargo build
 ```
