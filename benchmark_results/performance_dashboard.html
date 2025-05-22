@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quantum Protocols Performance Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .dashboard { display: flex; flex-wrap: wrap; }
+        .chartcontainer { 
+            width: 48%; 
+            margin: 1%; 
+            padding: 10px; 
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .fullwidth { width: 98%; }
+        h1, h2 { color: #333; }
+        .summary { 
+            background-color: #f9f9f9; 
+            padding: 15px; 
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { text-align: left; padding: 8px; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; }
+        tr:hover { background-color: #f5f5f5; }
+    </style>
+</head>
+<body>
+    <h1>Quantum Protocols Performance Dashboard</h1>
+<div class=summary><h2>Performance Summary</h2><p>Total Operations: 65</p><p>Total Duration: 3.15 ms</p><p>Average Duration: 0.05 ms</p><p>Slowest Operation: qecc_encode_repetition (Error Correction) - 0.50 ms</p><p>Fastest Operation: qubit_x_gate (Qubit Operation) - 0.00 ms</p></div><div class=dashboard><div class=chartcontainer><h2>Average Duration by Operation Type</h2><canvas id=opTypeChart></canvas></div><div class=chartcontainer><h2>Operation Count by Type</h2><canvas id=opCountChart></canvas></div><div class=chartcontainer><h2>Top 10 Slowest Operations</h2><canvas id=slowestOpsChart></canvas></div><div class=chartcontainer><h2>Performance Distribution</h2><canvas id=perfDistChart></canvas></div><div class=fullwidth><h2>Detailed Performance Metrics</h2><table><tr><th>Operation</th><th>Type</th><th>Duration (ms)</th><th>Memory (if available)</th></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.38</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.01</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_x_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_h_gate</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>qubit_measure</td><td>Qubit Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>register_create_2</td><td>Register Operation</td><td>0.01</td><td>N/A</td></tr><tr><td>register_hadamard_all_2</td><td>Register Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>register_measure_all_2</td><td>Register Operation</td><td>0.01</td><td>N/A</td></tr><tr><td>register_create_4</td><td>Register Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>register_hadamard_all_4</td><td>Register Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>register_measure_all_4</td><td>Register Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>register_create_8</td><td>Register Operation</td><td>0.01</td><td>N/A</td></tr><tr><td>register_hadamard_all_8</td><td>Register Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>register_measure_all_8</td><td>Register Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>state_create_2</td><td>State Operation</td><td>0.02</td><td>N/A</td></tr><tr><td>state_create_4</td><td>State Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>state_create_8</td><td>State Operation</td><td>0.00</td><td>N/A</td></tr><tr><td>state_bell_pair</td><td>State Operation</td><td>0.03</td><td>N/A</td></tr><tr><td>state_ghz_state</td><td>State Operation</td><td>0.02</td><td>N/A</td></tr><tr><td>state_serialize</td><td>State Operation</td><td>0.01</td><td>N/A</td></tr><tr><td>qecc_encode_repetition</td><td>Error Correction</td><td>0.50</td><td>N/A</td></tr><tr><td>qecc_encode_steane7</td><td>Error Correction</td><td>0.44</td><td>N/A</td></tr><tr><td>qecc_encode_shor9</td><td>Error Correction</td><td>0.41</td><td>N/A</td></tr><tr><td>qcqp_protect_data</td><td>Error Correction</td><td>0.34</td><td>N/A</td></tr><tr><td>qcqp_verify_data</td><td>Error Correction</td><td>0.00</td><td>N/A</td></tr><tr><td>qftp_create</td><td>Error Correction</td><td>0.00</td><td>N/A</td></tr><tr><td>qpcp_vote</td><td>Consensus Protocol</td><td>0.01</td><td>N/A</td></tr><tr><td>qpcp_operations</td><td>Consensus Protocol</td><td>0.00</td><td>N/A</td></tr><tr><td>qtsp_rotate_keys</td><td>Consensus Protocol</td><td>0.01</td><td>N/A</td></tr><tr><td>qtsp_sign_message</td><td>Consensus Protocol</td><td>0.01</td><td>N/A</td></tr><tr><td>qvcp_create</td><td>Consensus Protocol</td><td>0.00</td><td>N/A</td></tr><tr><td>qdap_encode_amplitude</td><td>Classical-Quantum Translation</td><td>0.10</td><td>N/A</td></tr><tr><td>qdap_encode_phase</td><td>Classical-Quantum Translation</td><td>0.02</td><td>N/A</td></tr><tr><td>qdap_encode_dual</td><td>Classical-Quantum Translation</td><td>0.02</td><td>N/A</td></tr><tr><td>qdap_encode_binary</td><td>Classical-Quantum Translation</td><td>0.00</td><td>N/A</td></tr><tr><td>qdap_encode_basis_state</td><td>Classical-Quantum Translation</td><td>0.01</td><td>N/A</td></tr><tr><td>qdap_creation</td><td>Classical-Quantum Translation</td><td>0.00</td><td>N/A</td></tr><tr><td>qrng_generate_bytes_16</td><td>Security Operation</td><td>0.12</td><td>N/A</td></tr><tr><td>qrng_generate_bytes_32</td><td>Security Operation</td><td>0.22</td><td>N/A</td></tr><tr><td>qrng_generate_bytes_64</td><td>Security Operation</td><td>0.44</td><td>N/A</td></tr></table></div></div><script>
+        const opTypeCtx = document.getElementById("opTypeChart").getContext("2d");
+        new Chart(opTypeCtx, {
+            type: "bar",
+            data: {
+                labels: ["Qubit Operation", "Consensus Protocol", "Register Operation", "State Operation", "Security Operation", "Classical-Quantum Translation", "Error Correction"],
+                datasets: [{
+                    label: "Average Duration (ms)",
+                    data: [0.013, 0.005, 0.003, 0.013, 0.261, 0.025, 0.282],
+                    backgroundColor: ["rgba(55, 100, 200, 0.6)", "rgba(75, 115, 190, 0.6)", "rgba(95, 130, 180, 0.6)", "rgba(115, 145, 170, 0.6)", "rgba(135, 160, 160, 0.6)", "rgba(155, 175, 150, 0.6)", "rgba(175, 190, 140, 0.6)"],
+                    borderColor: ["rgba(55, 100, 200, 0.6)", "rgba(75, 115, 190, 0.6)", "rgba(95, 130, 180, 0.6)", "rgba(115, 145, 170, 0.6)", "rgba(135, 160, 160, 0.6)", "rgba(155, 175, 150, 0.6)", "rgba(175, 190, 140, 0.6)"].map(c => c.replace("0.6", "1")),
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+        
+        const opCountCtx = document.getElementById("opCountChart").getContext("2d");
+        new Chart(opCountCtx, {
+            type: "pie",
+            data: {
+                labels: ["Qubit Operation", "Consensus Protocol", "Register Operation", "State Operation", "Security Operation", "Classical-Quantum Translation", "Error Correction"],
+                datasets: [{
+                    label: "Operation Count",
+                    data: [30, 5, 9, 6, 3, 6, 6],
+                    backgroundColor: ["rgba(55, 100, 200, 0.6)", "rgba(75, 115, 190, 0.6)", "rgba(95, 130, 180, 0.6)", "rgba(115, 145, 170, 0.6)", "rgba(135, 160, 160, 0.6)", "rgba(155, 175, 150, 0.6)", "rgba(175, 190, 140, 0.6)"],
+                    borderColor: ["rgba(55, 100, 200, 0.6)", "rgba(75, 115, 190, 0.6)", "rgba(95, 130, 180, 0.6)", "rgba(115, 145, 170, 0.6)", "rgba(135, 160, 160, 0.6)", "rgba(155, 175, 150, 0.6)", "rgba(175, 190, 140, 0.6)"].map(c => c.replace("0.6", "1")),
+                    borderWidth: 1
+                }]
+            },
+            options: { responsive: true }
+        });
+        
+        const slowestOpsCtx = document.getElementById("slowestOpsChart").getContext("2d");
+        new Chart(slowestOpsCtx, {
+            type: "bar",
+            data: {
+                labels: ["qecc_encode_repetition (Error Correction)", "qrng_generate_bytes_64 (Security Operation)", "qecc_encode_steane7 (Error Correction)", "qecc_encode_shor9 (Error Correction)", "qubit_x_gate (Qubit Operation)", "qcqp_protect_data (Error Correction)", "qrng_generate_bytes_32 (Security Operation)", "qrng_generate_bytes_16 (Security Operation)", "qdap_encode_amplitude (Classical-Quantum Translation)", "state_bell_pair (State Operation)"],
+                datasets: [{
+                    label: "Duration (ms)",
+                    data: [0.502, 0.441, 0.438, 0.407, 0.377, 0.339, 0.216, 0.125, 0.095, 0.028],
+                    backgroundColor: "rgba(255, 99, 132, 0.6)",
+                    borderColor: "rgba(255, 99, 132, 1)",
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { 
+                    y: { beginAtZero: true },
+                    x: { ticks: { maxRotation: 90, minRotation: 45 } } 
+                }
+            }
+        });
+        
+        const perfDistCtx = document.getElementById("perfDistChart").getContext("2d");
+        new Chart(perfDistCtx, {
+            type: "bar",
+            data: {
+                labels: ["0-5 ms"],
+                datasets: [{
+                    label: "Number of Operations",
+                    data: [65],
+                    backgroundColor: "rgba(75, 192, 192, 0.6)",
+                    borderColor: "rgba(75, 192, 192, 1)",
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+        </script></body></html>
